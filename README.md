@@ -6,11 +6,11 @@
   Spiral handwritten prediction for Parkinson's disease.
 </p>
 
-## Libraries
+## Technologies
 
 * Python
 * OpenCV
-* Scikit-learn
-* Numpy
-* Pandas
+* scikit-learn
+* NumPy
 * Matplotlib
+* Twilio API
