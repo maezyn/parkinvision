@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>ParkinVision</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">ParkinVision</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/about">About</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="text-center">
+                    <a href="/">
+                        <img class="img-fluid w-50" alt="ParkinVision Logo" src="{{ url_for('static', filename='img/logo.png') }}" />
+                    </a>
+                </div>
+                <h4 class="text-center font-italic w-100 mt-5">Spiral handwritten prediction for Parkinson's disease.</h4>
+            </div>
+            <div class="row mt-4">
+                {% if result[0] == 0 %}
+                    <p class="text-center w-100"><span class="font-weight-bold">The prediction came back negative.</span> It is unlikely that you have Parkinson's.</p>
+                {% else %}
+                    <p class="text-center w-100"><span class="font-weight-bold">The prediction came back positive.</span> The drawing was similar to other patients that have Parkinson's disease.</p>
+                {% endif %}
+                    <p class="text-center w-100">Please note that this is not a diagnosis. If you have any questions or concerns, please consult a medical professional.</p>
+            </div>
+            <div class="row mt-1">
+                <h2 class="text-center w-100">Your Drawing:</h2>
+                <div class="text-center w-100">
+                    <img class="img-fluid w-25" alt="Your Drawing" src="{{image_path}}" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

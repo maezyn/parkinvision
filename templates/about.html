@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>ParkinVision</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">ParkinVision</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/">About</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="text-center">
+                    <a href="/">
+                        <img class="img-fluid w-50" alt="ParkinVision Logo" src="{{ url_for('static', filename='img/logo.png') }}" />
+                    </a>
+                </div>
+                <h4 class="text-center font-italic w-100 mt-5">Spiral handwritten prediction for Parkinson's disease.</h4>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p>
+                        Research has shown that one of the early warning signs for Parkinson's disease is difficulty writing due to changes in the brain. One way of testing for this is by performing a spiral test on a piece of paper. There tends to be a noticeable difference in the drawings between those who have been diagnosed with Parkinson's disease and those who have not. The goal of this project was to determine this difference through machine learning and give users predictions on spiral drawings that could be performed at home.
+                    </p>
+                    <p>
+                        ParkinVision is a responsive web application that allows the user to see a prediction about whether their spiral drawing is representative of an individual with Parkinson's disease. A user can either text an image of their drawing to ParkinVision's phone number or upload an image on the web application. Then, the picture is processed and a prediction is made. Afterwards, the suspected result is outputted to the user either through a text message or on the web application's results page.
+                    </p>
+                    <p>
+                        I used a Flask web application styled with Bootstrap to process and display the predictions of uploaded images. The Twilio MMS API was used for sending text messages as a POST request to my locally hosted web application using ngrok as the middleman. The image processing used OpenCV to modify and convert the image into a NumPy array of features for a machine learning model. Afterwards, the image was evaluated on a trained machine learning model before a response would be returned either through a text message with Twilio's API or through a results web page. The machine learning model was trained on a data set of spiral drawings of patients that had Parkinson's disease and a control group that did not. Scikit-learn classification algorithms were evaluated on the data and GridSearchCV was used to find the optimal parameters for the selected model.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
