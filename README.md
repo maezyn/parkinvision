@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Spiral handwritten prediction for Parkinson's disease.
+  Hand-drawn spiral prediction for Parkinson's disease.
 </p>
 
 ## Libraries
