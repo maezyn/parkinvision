@@ -20,3 +20,9 @@ This project was created for UC Irvine's [HackUCI](https://www.hackuci.com/) 202
 * scikit-learn
 * SciPy
 * Twilio API
+
+## Future Improvements
+
+* Convert classifier to a convolutional neural network using a deep 
+learning library.
+* Transform images using various transformations to add more data.
