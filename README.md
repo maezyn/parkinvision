@@ -17,13 +17,14 @@ This project was created for UC Irvine's [HackUCI](https://www.hackuci.com/) 202
 
 * Python
 * OpenCV
+* Keras
 * scikit-learn
 * SciPy
 * Twilio API
 
 ## Future Improvements
 
-* Transform images using various transformations to synthetically add more data.
+* Modify images using various transformations to synthetically add more data.
 
 ## Acknowledgements
 
