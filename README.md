@@ -23,6 +23,8 @@ This project was created for UC Irvine's [HackUCI](https://www.hackuci.com/) 202
 
 ## Future Improvements
 
-* Convert classifier to a convolutional neural network using a deep 
-learning library.
-* Transform images using various transformations to add more data.
+* Transform images using various transformations to synthetically add more data.
+
+## Acknowledgements
+
+The data folder was downloaded from an article on [pyimagesearch](https://www.pyimagesearch.com/2019/04/29/detecting-parkinsons-disease-with-opencv-computer-vision-and-the-spiral-wave-test/) which provides the author's own approach to machine learning on this data set. Some of the computer vision techniques were derived from his post. Additionally, he mentioned the source of the data set, Adriano de Oliveira Andrade and Joao Paulo Folado from the NIATS of Federal University of Uberlândia. 
