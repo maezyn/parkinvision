@@ -119,7 +119,6 @@ dmypy.json
 profile_default/
 ipython_config.py
 projectenv/
-model/dataset/
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
