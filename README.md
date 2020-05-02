@@ -19,12 +19,13 @@ This project was created for UC Irvine's [HackUCI](https://www.hackuci.com/) 202
 * OpenCV
 * Keras
 * scikit-learn
-* SciPy
+* Flask
 * Twilio API
 
 ## Future Improvements
 
-* Modify images using various transformations to synthetically add more data.
+* Improve basic CNN architecture (and migrate to TF 2.0 Keras).
+* Synthetically add more data with Tensorflow's data augmentation libraries.
 
 ## Acknowledgements
 
