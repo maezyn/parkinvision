@@ -16,16 +16,18 @@ This project was created for UC Irvine's [HackUCI](https://www.hackuci.com/) 202
 ## Technologies
 
 * Python
-* OpenCV
-* Keras
+* Tensorflow 2.0 / Keras
 * scikit-learn
+* OpenCV
 * Flask
 * Twilio API
 
-## Future Improvements
+## Machine Learning and Deep Learning Approach
 
-* Improve basic CNN architecture (and migrate to TF 2.0 Keras).
-* Synthetically add more data with Tensorflow's data augmentation libraries.
+Two different models were trained for this task (as a learning experience). Ultimately, the machine learning approach was chosen as the lack of data stunted the deep learning model's performance.
+
+* The machine learning approach trained a Random Forest classifier using the scikit-learn and OpenCV libraries.
+* The deep learning approach trained a standard Convolutional Neural Network using a Tensorflow 2.0 / Keras model with data augmentation.
 
 ## Acknowledgements
 
