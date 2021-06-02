@@ -69,7 +69,7 @@ testpath==0.4.4
 tornado==6.0.3
 traitlets==4.3.3
 twilio==6.35.3
-urllib3==1.25.8
+urllib3==1.26.5
 wcwidth==0.1.8
 webencodings==0.5.1
 Werkzeug==0.16.1
