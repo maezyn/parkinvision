@@ -72,6 +72,6 @@ twilio==6.35.3
 urllib3==1.25.8
 wcwidth==0.1.8
 webencodings==0.5.1
-Werkzeug==0.16.1
+Werkzeug==2.2.3
 widgetsnbextension==3.5.1
 zipp==1.1.0
